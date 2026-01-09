@@ -100,3 +100,8 @@ Download the latest release and extract the zip file to a permanent location.
 
 4. Build:  
    `cmake --build build --config Release`
+
+### **Requirements**
+
+- Windows 10/11 (64-bit)
+- Adobe Photoshop CC 2022 (v23.0) or higher
