@@ -46,7 +46,7 @@ Download the latest release and extract the zip file to a permanent location.
    * Set the **Size** (pixels).  
 4. **Enter Text:** Type the characters you want to pack in the **Glyphs** area.  
 5. **Texture Settings:**  
-   * **Sizing Method:** Choose Auto (POT) for game engines, or Fixed for specific needs.  
+   * **Sizing Method:** Choose Auto (POT) or (Mult 4) for game engines, or Fixed for specific needs.  
    * **Effect Padding:** Increase this if you plan to add Strokes or Drop Shadows in Photoshop.  
 6. **Generate:**  
    * **Export Files:** Saves atlas.png and atlas.fnt to disk.  
