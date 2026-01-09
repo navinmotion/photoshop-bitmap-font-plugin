@@ -102,7 +102,3 @@ Download the latest release and extract the zip file to a permanent location.
 
 4. Build:  
    `cmake --build build --config Release`
-
-## **License**
-
-[MIT License](https://www.google.com/search?q=LICENSE) \- Free for personal and commercial use.
