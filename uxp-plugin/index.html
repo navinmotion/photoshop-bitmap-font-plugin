@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Native Text Atlas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR CONTAINER -->
+    <div class="sidebar">
+
+        <!-- SCROLLABLE CONTROLS -->
+        <div class="sidebar-content">
+
+            <!-- Font Section -->
+            <div class="section">
+                <div class="section-header">Typography</div>
+                <div class="section-body">
+                    <div class="col">
+                        <label>Font Source</label>
+                        <div class="file-input-group">
+                            <select id="fontFamily">
+                                <option value="Arial">Arial</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Courier New">Courier New</option>
+                                <option value="Impact">Impact</option>
+                                <option value="custom_loaded" disabled>-- Custom --</option>
+                            </select>
+                            <button id="btnLoadFont" class="icon-btn" title="Load Font">📂</button>
+                        </div>
+                        <input type="hidden" id="customFontPath">
+                        <div id="loadedFontName"
+                            style="font-size:9px; color:#4fce5d; display:none; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <label>Size (px)</label>
+                        <input type="number" id="fontSize" value="51" min="8">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Section -->
+            <div class="section">
+                <div class="section-header">Glyphs</div>
+                <div class="section-body">
+                    <div class="col">
+                        <textarea id="textInput" placeholder="ABC 123...">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!;%:?*()_+-=.,/|"'@#$^&{}[]</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Texture Section -->
+            <div class="section">
+                <div class="section-header">Texture Packing</div>
+                <div class="section-body">
+                    <div class="col">
+                        <label>Sizing Method</label>
+                        <select id="sizingMethod">
+                            <option value="auto_pot" selected>Auto (Power of 2)</option>
+                            <option value="auto_m4">Auto (Multiple of 4)</option>
+                            <option value="fixed">Fixed Dimensions</option>
+                        </select>
+                    </div>
+                    <div class="row" id="fixedSizeGroup" style="display:none;">
+                        <div class="col"><label>Width</label><input type="number" id="atlasWidth" value="512"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label>Padding</label><input type="number" id="padding" value="2"></div>
+                        <div class="col"><label>Spacing</label><input type="number" id="spacing" value="1"></div>
+                    </div>
+                    <div class="col">
+                        <label>Effect Padding</label><input type="number" id="effectPadding" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Global Metrics Section (NEW) -->
+            <div class="section">
+                <div class="section-header">Global Metric Adjustments</div>
+                <div class="section-body">
+                    <div class="col">
+                        <label title="Add to character advance width">xAdvance</label>
+                        <input type="number" id="globalXAdvance" value="0">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label title="Offset X draw position">xOffset</label>
+                            <input type="number" id="globalXOffset" value="0">
+                        </div>
+                        <div class="col">
+                            <label title="Offset Y draw position">yOffset</label>
+                            <input type="number" id="globalYOffset" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Output -->
+            <div class="section-header">Output</div>
+            <div class="section-body">
+                <div class="col">
+                    <label>File Name</label><input type="text" id="fileName" value="MyFontAtlas">
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button id="btnExport" class="secondary">Export Files</button>
+            <button id="btnSendToPS" class="primary">Create Doc</button>
+        </div>
+    </div>
+
+    <div class="main-area">
+        <div class="toolbar">
+            <span class="toolbar-title">Preview</span>
+            <div id="connectionStatus" class="status off"><span class="status-dot"></span> Offline</div>
+        </div>
+        <div class="preview-wrapper">
+            <img id="previewImage" alt="" />
+            <canvas id="simCanvas" style="display:none;"></canvas>
+        </div>
+        <div id="uiConsole">Ready...</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
