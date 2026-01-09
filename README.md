@@ -10,9 +10,9 @@ A powerful, high-performance Photoshop plugin for generating professional bitmap
 * **Custom Fonts:** Load any .ttf or .otf file directly from your disk, or use system fonts.  
 * **Effect Padding:** Automatically reserves extra space around glyphs to prevent clipping when applying Photoshop Layer Styles (Strokes, Shadows, Glows).  
 * **Standard Export:** Exports .png atlases and .fnt (BMFont) metadata compatible with **Unity**, **Godot**, **Unreal Engine**, and other game frameworks.  
-* **Photoshop Integration:** \* Creates a fully layered document from the generated atlas.  
-  * Automatically slices glyphs into separate layers.  
-  * Groups everything into a neatly organized Smart Object.  
+* **Photoshop Integration:**
+  * Creates a fully layered document from the generated atlas.  
+  * Automatically slices glyphs into separate layers.    
   * Supports iterative updates (overwrite existing doc).  
 * **Global Adjustments:** Fine-tune xAdvance, xOffset, and yOffset globally for perfect alignment.
 
