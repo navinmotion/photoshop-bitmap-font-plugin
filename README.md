@@ -55,12 +55,10 @@ Download the latest release and extract the zip file to a permanent location.
 ### **Applying Layer Styles (Workflow)**
 
 1. Click **Create Doc**.  
-2. In the new document, find the **Smart Object** layer.  
-3. Double-click the Smart Object to open it.  
-4. Inside, you will see separate layers for each glyph (Glyph\_65, Glyph\_66, etc.).  
-5. Apply your Layer Styles (Stroke, Gradient, Shadow) to these layers.  
-6. **Save** and **Close** the Smart Object tab.  
-7. Your main atlas document is now updated with the effects\!
+2. In the new document, you will see separate layers for each glyph (Glyph\_65, Glyph\_66, etc.).
+3. Apply your Layer Styles (Stroke, Gradient, Shadow) to these layers.
+4. Your main atlas document is now updated with the effects\!
+5. **Export Files** and **Overwrite** the newly created .png with layer style.
 
 ## **Troubleshooting**
 
