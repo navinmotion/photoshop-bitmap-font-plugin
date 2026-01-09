@@ -49,8 +49,8 @@ Download the latest release and extract the zip file to a permanent location.
    * **Sizing Method:** Choose Auto (POT) or (Mult 4) for game engines, or Fixed for specific needs.  
    * **Effect Padding:** Increase this if you plan to add Strokes or Drop Shadows in Photoshop.  
 6. **Generate:**  
-   * **Export Files:** Saves atlas.png and atlas.fnt to disk.  
    * **Create Doc:** Generates a new Photoshop document with sliced layers, ready for styling.
+   * **Export Files:** Saves atlas.png and atlas.fnt to disk.  
 
 ### **Applying Layer Styles (Workflow)**
 
