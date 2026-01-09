@@ -1,0 +1,10 @@
+^C:\USERS\NAVIN.KUMAR\DESKTOP\NAVIN\TA-TOOLS\BITMAPFONT\BUILD\CMAKEFILES\B9D30969F2ADFF31B17EBB2248433B02\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/navin.kumar/Desktop/Navin/TA-Tools/BitmapFont/native-engine -BC:/Users/navin.kumar/Desktop/Navin/TA-Tools/BitmapFont/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/navin.kumar/Desktop/Navin/TA-Tools/BitmapFont/build/TextAtlasEngine.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

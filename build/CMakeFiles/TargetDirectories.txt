@@ -1,0 +1,3 @@
+C:/Users/navin.kumar/Desktop/Navin/TA-Tools/BitmapFont/build/CMakeFiles/TextAtlasEngine.dir
+C:/Users/navin.kumar/Desktop/Navin/TA-Tools/BitmapFont/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/navin.kumar/Desktop/Navin/TA-Tools/BitmapFont/build/CMakeFiles/ZERO_CHECK.dir
