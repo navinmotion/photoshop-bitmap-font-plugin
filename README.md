@@ -1,7 +1,9 @@
 # **Native Text Atlas Generator for Photoshop**
 
-A powerful, high-performance Photoshop plugin for generating professional bitmap fonts and text atlases. It combines a native C++ engine (FreeType, HarfBuzz, MaxRects packing) with a modern Adobe UXP panel to deliver correct text shaping, efficient packing, and seamless Photoshop integration.  
-*(Screenshots and Demo Video for the plugin:)*
+A powerful, high-performance Photoshop plugin for generating professional bitmap fonts and text atlases. It combines a native C++ engine (FreeType, HarfBuzz, MaxRects packing) with a modern Adobe UXP panel to deliver correct text shaping, efficient packing, and seamless Photoshop integration.
+
+### **Screenshots and Demo Video for the plugin:**
+
 <img width="1916" height="1196" alt="snap-01" src="https://github.com/user-attachments/assets/fa57ca79-b6e3-4b99-9ff9-09f680ee979e" />
 <img width="1916" height="1196" alt="snap-02" src="https://github.com/user-attachments/assets/ae827de0-8c0a-4032-b29d-42926f3334bc" />
 
